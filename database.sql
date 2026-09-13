@@ -1,0 +1,9 @@
+CREATE TABLE parking_slots (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    vehicle_no VARCHAR(50) NOT NULL,
+    owner_name VARCHAR(100) NOT NULL,
+    slot_no VARCHAR(20) NOT NULL,
+    duration INT NOT NULL,
+    status VARCHAR(50) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
